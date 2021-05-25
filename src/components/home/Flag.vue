@@ -1,0 +1,61 @@
+<template>
+    <div id="flag-container" class="wrapper-page bg-sky">
+        <main class="page-main">
+            <div class="js-flag-canvas"></div>
+        </main>
+        
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'Flag',
+}
+</script>
+
+<style scoped>
+#flag-container {
+    margin: 50px;
+    border-radius: 15px;
+    height: calc(100% - 100px);
+    box-shadow: 5px 10px 18px #888888;
+    z-index: 1;
+}
+
+.wrapper-page{
+    flex: 4
+}
+
+.js-flag-canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+img {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+p {
+    margin: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1300px) {
+    #flag-container {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+        border-radius: 20px;
+        height: calc(100% - 2rem);
+    }
+    #title {
+        position: absolute;
+        top: 50px;
+        color: #fff;
+    }
+}
+</style>
