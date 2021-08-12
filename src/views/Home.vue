@@ -4,12 +4,24 @@
     <Flag/>
     <IntroText/>
     <BottomBlue/>
+    <!--
+    <div id="mobile">
+      <div id="mobile-header">
+        <div>WHY</div>
+        <div>WHAT</div>
+        <div>HOW</div> 
+      </div>
+      <p>New Jersey needs a new flag. <br> New Jersey deserves a design that citizens recognize, fly and enjoy.</p>
+      <router-link id="mobile-learn-more" to="/credits" target="_blank" rel="noopener noreferrer">Learn More</router-link>
+    </div>
+    
      <h1 id="title">The Jersey Bold Banner</h1>
     <div id="mobile-footer">
         <router-link :to="'/why'" target="_blank" rel="noopener noreferrer">WHY</router-link>
         <router-link :to="'/what'" target="_blank" rel="noopener noreferrer">WHAT</router-link>
         <router-link :to="'/how'" target="_blank" rel="noopener noreferrer">HOW</router-link>
     </div>
+    -->
   </div>
 </template>
 
@@ -96,9 +108,41 @@ export default {
 
 @media screen and (max-width: 1300px) {
     .home {
-        display: flex;
-        align-items: center;
+        display: block;
     }
+}
+
+#mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#mobile p {
+  margin: 20px;
+  font-size: 1.2rem
+}
+
+#mobile-header {
+  display: flex;
+  
+}
+
+#mobile-header div {
+  flex: 1;
+  padding: 10px;
+  font-family: Poppins;
+  background: #154D8A;
+  color: #fff;
+}
+
+#mobile-learn-more {
+  background: #154D8A;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 </style>
 

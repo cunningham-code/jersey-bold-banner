@@ -47,10 +47,11 @@ p {
 
 @media screen and (max-width: 1300px) {
     #flag-container {
-        margin: 1rem;
-        width: calc(100% - 2rem);
-        border-radius: 20px;
-        height: calc(100% - 2rem);
+        border-radius: 0px;
+        height: 50%;
+        width: 100%;
+        margin: 0px;
+        box-shadow: none;
     }
     #title {
         position: absolute;

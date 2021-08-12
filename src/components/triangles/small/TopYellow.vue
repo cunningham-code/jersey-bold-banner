@@ -14,10 +14,6 @@
 }
 
 @media screen and (max-width: 1300px) {
-    /*
-    .top-yellow {
-        display: none;
-    }
-    */
+    .top-yellow { display: none; }
 }
 </style>

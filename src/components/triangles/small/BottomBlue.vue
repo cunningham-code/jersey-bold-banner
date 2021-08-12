@@ -14,10 +14,6 @@
 }
 
 @media screen and (max-width: 1300px) {
-  /*
-    .bottom-blue {
-        display: none;
-    }
-    */
+    .bottom-blue { display: none; }
 }
 </style>

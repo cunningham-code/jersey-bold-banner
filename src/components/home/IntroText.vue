@@ -54,8 +54,11 @@ h1 {
 }
 
 @media screen and (max-width: 1300px) {
-    .text-container {
+    h1 {
         display: none;
+    }
+    .text-container {
+        overflow-y: scroll;
     }
 }
 </style>
