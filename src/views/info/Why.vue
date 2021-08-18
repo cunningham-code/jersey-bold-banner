@@ -1,8 +1,12 @@
 <template>
   <div class="home">
+ 
     <TopYellow/>
     <BottomBlue/>
     <h1 id="title">Why | The Jersey Bold Banner</h1>
+    <p>New Jersey's flag is broken.</p>
+    
+    <
     <!--
     <div class="content">
       <p>Hello</p>
@@ -40,13 +44,11 @@ export default {
 
 #title {
   z-index: 2;
-  font-size: 3rem;
+  font-size: 2rem;
   /*margin-top: 2rem;*/
   text-align: left;
   width: 100%;
-  font-family: Radicalis;
-  position: absolute;
-  top: 0;
+  /*font-family: Radicalis;*/
   color: #000;
   padding: 0px 100px;
 }

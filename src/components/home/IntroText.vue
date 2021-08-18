@@ -44,7 +44,10 @@ export default {
     align-content: left;
     text-align: left;
     z-index: 1;
+    overflow-x: scroll;
+    /*
     overflow-y: scroll;
+    */
 }
   
 h1 {
@@ -57,8 +60,10 @@ h1 {
     h1 {
         display: none;
     }
+    
     .text-container {
-        overflow-y: scroll;
+      overflow-x: scroll
     }
+    
 }
 </style>

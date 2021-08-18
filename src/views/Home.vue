@@ -134,6 +134,7 @@ export default {
   font-family: Poppins;
   background: #154D8A;
   color: #fff;
+  overflow-x: scroll;
 }
 
 #mobile-learn-more {
