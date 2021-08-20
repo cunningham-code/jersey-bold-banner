@@ -9,7 +9,7 @@
         />
         <IntroTextHelper
             qword="WHAT"
-            title="Jersey's flag should be."
+            title="Jersey's flag could be."
             description="New Jersey needs a memorable design that represents our shared history, values and geography."
             link="/what"
         />

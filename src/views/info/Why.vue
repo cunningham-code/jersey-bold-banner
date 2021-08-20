@@ -1,115 +1,54 @@
 <template>
-  <div class="home">
- 
-    <TopYellow/>
-    <BottomBlue/>
-    <h1 id="title">Why | The Jersey Bold Banner</h1>
-    <p>New Jersey's flag is broken.</p>
-    
-    <
-    <!--
-    <div class="content">
-      <p>Hello</p>
+  <div id="container">
+    <div class="header"></div>
+    <div class="header-text" style="margin: 50px">
+      <h1 style="margin: 0; font-family: Radicalis;">Why Jersey Needs a New Flag</h1>
+      <p style="margin: 0">New Jersey deserves a design that citizens recognize, fly and enjoy.</p>
     </div>
-    -->
+    <div class="card">
+      <h1 style="margin: 0">Jersey's Flag Is Broken</h1>
+      <p>World</p>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import BottomBlue from '@/components/triangles/small/BottomBlue.vue'
-import TopYellow from '@/components/triangles/small/TopYellow.vue'
 
 export default {
   name: 'Home',
-  components: {
-    BottomBlue,
-    TopYellow
-  }
+  components: {}
 }
 </script>
 
 <style scoped>
 
-.home {
-    display: flex;
-    /*background-color:#f8f3db;*/
+#container {
     background-color: white;
     height: 100%;
 }
 
-.content {
-  width: 100%;
-}
-
-#title {
-  z-index: 2;
-  font-size: 2rem;
-  /*margin-top: 2rem;*/
-  text-align: left;
-  width: 100%;
-  /*font-family: Radicalis;*/
-  color: #000;
-  padding: 0px 100px;
-}
-/*
-#mobile-footer {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      bottom: 0;
-      z-index: 2;
-      width: 100%;
-      margin-bottom: 2rem;
-      flex-direction: column;
-}
-
-#external-mobile-links {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0px;
-}
-
-#external-mobile-links a {
-  margin: 5px;
-  color: #fff;
-  text-decoration: none;
-}
-
-#mobile-links a {
-  padding: 12px 24px;
-  font-family: Lavigne;
-  background: #154D8A;
-  margin: 5px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-#mobile-links a:nth-child(2) {
+.header {
   background: #F5DF8A;
-  color: #000;
+  height: 20px;
+  width: 100%;
 }
 
-@media screen and (min-width: 1300px) {
-    #title {
-        display: none !important;
-    }
-    #mobile-footer {
-        display: none !important;
-    }
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 4px rgba(21,77,138,0.5);
+  border-radius: 5px;
+  width: 95%;
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 30px;
+  text-align: start;
 }
 
-@media screen and (max-width: 1300px) {
-    .home {
-        display: flex;
-        align-items: center;
-    }
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
 }
-*/
-</style>
-
-<style>
 
 /*
 FONTS
