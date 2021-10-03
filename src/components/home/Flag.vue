@@ -48,7 +48,7 @@ p {
 @media screen and (max-width: 1300px) {
     #flag-container {
         border-radius: 0px;
-        height: 50%;
+        flex: 1;
         width: 100%;
         margin: 0px;
         box-shadow: none;

@@ -108,7 +108,7 @@ export default {
 
 @media screen and (max-width: 1300px) {
     .home {
-        display: block;
+        flex-direction: column;
     }
 }
 

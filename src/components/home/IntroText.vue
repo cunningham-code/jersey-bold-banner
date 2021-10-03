@@ -62,7 +62,9 @@ h1 {
     }
     
     .text-container {
-      overflow-x: scroll
+      overflow-y: scroll;
+      flex: 2;
+      justify-content: start;
     }
     
 }
