@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .text-container {
-    flex: 5;
+    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,9 @@ h1 {
 
 @media screen and (max-width: 1000px) {
     h1 {
-        display: none;
+        font-size: 1.2rem;
+        margin: 20px 10px 10px 10px;
+        color: #333;
     }
     
     .text-container .link {
@@ -72,6 +74,8 @@ h1 {
     .text-container {
         justify-content: start;
         background: #fafafa;
+        border-top: solid 3px #154D8A;
+        
     }
 }
 </style>

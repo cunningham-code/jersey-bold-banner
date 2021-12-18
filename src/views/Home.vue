@@ -2,9 +2,6 @@
   <div class="home">
     <TopYellow/>
     <Flag/>
-    <div class="mobile-header">
-      <h1>The Jersey Bold Banner</h1>
-    </div>
     <IntroText/>
     <BottomBlue/>
     <!--
