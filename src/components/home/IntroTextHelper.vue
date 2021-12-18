@@ -64,6 +64,21 @@ a:nth-child(3) {
   border-left: 5px solid #F5DF8A;
 }
 
+@media screen and (max-width: 1000px) {
+    a {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin: 10px;
+        background: #fff;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+        padding: 0 0 0 10px;
+        font-weight: 100;
+        margin: 0;
+    }
+}
 
 
 /*

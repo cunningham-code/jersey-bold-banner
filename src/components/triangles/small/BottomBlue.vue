@@ -13,7 +13,7 @@
     z-index: 1;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
     .bottom-blue { display: none; }
 }
 </style>

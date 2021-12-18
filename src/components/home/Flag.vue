@@ -45,12 +45,11 @@ p {
     font-style: italic;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
     #flag-container {
-        border-radius: 0px;
         flex: 1;
-        width: 100%;
-        margin: 0px;
+        width: 90%;
+        margin: 10px auto;
         box-shadow: none;
     }
     #title {

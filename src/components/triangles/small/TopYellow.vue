@@ -13,7 +13,12 @@
     left: 0;
 }
 
-@media screen and (max-width: 1300px) {
-    .top-yellow { display: none; }
+
+@media screen and (max-width: 1000px) {
+    .top-yellow { 
+        width: 100px;
+        height: 100px;
+     }
 }
+
 </style>

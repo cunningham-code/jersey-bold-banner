@@ -2,6 +2,9 @@
   <div class="home">
     <TopYellow/>
     <Flag/>
+    <div class="mobile-header">
+      <h1>The Jersey Bold Banner</h1>
+    </div>
     <IntroText/>
     <BottomBlue/>
     <!--
@@ -96,6 +99,11 @@ export default {
   border-radius: 5px;
 }
 
+.mobile-header {
+  display: none;
+  border-bottom: solid 3px #154D8A;
+}
+
 
 @media screen and (min-width: 1300px) {
     #title {
@@ -106,11 +114,19 @@ export default {
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
     .home {
         flex-direction: column;
     }
+
+    .mobile-header {
+      display: block;
+      font-family: Radicalis;
+      font-size: 0.75rem;
+      text-align: center;
+    }
 }
+
 
 #mobile {
   display: flex;

@@ -1,7 +1,7 @@
 <template>
     <div class="main-footer">
-        <a href="https://twitter.com/jersey_bold" target="_blank" rel="noopener noreferrer">@JERSEY_BOLD ON TWITTER</a>
-        <a href="mailto:contact@jerseybold.com" target="_blank" rel="noopener noreferrer">CONTACT@JERSEYBOLD.COM</a> 
+        <a href="https://twitter.com/jersey_bold" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:contact@jerseybold.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-open-text"></i></a> 
         <router-link :to="'/credits'" target="_blank">CREDITS</router-link>
     </div>
 </template>

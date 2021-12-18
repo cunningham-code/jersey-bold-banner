@@ -1,26 +1,27 @@
 <template>
-    <div class="text-container">
-        <h1>The Jersey Bold Banner</h1>
-        <IntroTextHelper
-            qword="WHY"
-            title="Jersey needs a new flag."
-            description="New Jersey deserves a design that citizens recognize, fly and enjoy."
-            link="/why"
-        />
-        <IntroTextHelper
-            qword="WHAT"
-            title="Jersey's flag could be."
-            description="New Jersey needs a memorable design that represents our shared history, values and geography."
-            link="/what"
-        />
-        <IntroTextHelper
-            qword="HOW"
-            title="Jersey can make this our flag."
-            description="New Jersey is in a great position to make this our new flag."
-            link="/how"
-        />
-        <Footer/>
-    </div>
+        
+        <div class="text-container">
+            <h1>The Jersey Bold Banner</h1>
+            <IntroTextHelper
+                qword="WHY"
+                title="Jersey needs a new flag."
+                description="New Jersey deserves a design that citizens recognize, fly and enjoy."
+                link="/why"
+            />
+            <IntroTextHelper
+                qword="WHAT"
+                title="Jersey's flag could be."
+                description="New Jersey needs a memorable design that represents our shared history, values and geography."
+                link="/what"
+            />
+            <IntroTextHelper
+                qword="HOW"
+                title="Jersey can make this our flag."
+                description="New Jersey is in a great position to make this our new flag."
+                link="/how"
+            />
+            <Footer/>
+        </div>
 </template>
 
 <script>
@@ -52,20 +53,25 @@ export default {
   
 h1 {
     font-family: Radicalis;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
     h1 {
         display: none;
     }
     
-    .text-container {
+    .text-container .link {
       overflow-y: scroll;
       flex: 2;
       justify-content: start;
+      margin: 10px;
     }
-    
+
+    .text-container {
+        justify-content: start;
+        background: #fafafa;
+    }
 }
 </style>
