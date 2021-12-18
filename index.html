@@ -1,0 +1,23 @@
+<!DOCTYPE html><html class="full-screen" lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"><link rel="icon" href="/favicon.ico"><title>Jersey Bold Banner</title><link type="text/css" rel="stylesheet" href="css/normalize.min.css"><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"><script src="js/jquery-1.11.1.min.js"></script><script src="js/three.min.js"></script><script src="js/modernizr.custom.95719.js"></script><script src="js/rivets.bundled.min.js"></script><script src="js/jquery.knob.min.js"></script><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><link type="text/css" rel="stylesheet" href="css/flagwaver-ui.css"><script src="js/hashvars.js"></script><script src="js/flagwaver.js"></script><script src="js/flagwaver-ui.js"></script><link href="/css/app.755bb6b4.css" rel="preload" as="style"><link href="/js/app.873fafaf.js" rel="preload" as="script"><link href="/js/chunk-vendors.e8748518.js" rel="preload" as="script"><link href="/css/app.755bb6b4.css" rel="stylesheet"></head><body class="full-screen"><noscript><strong>We're sorry but this website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class="full-screen" id="app"></div><script src="/js/chunk-vendors.e8748518.js"></script><script src="/js/app.873fafaf.js"></script></body><style>.full-screen {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+    }</style><script type="x-shader/x-fragment" id="fragmentShaderDepth">uniform sampler2D texture;
+          varying vec2 vUV;
+          vec4 pack_depth( const in float depth ) {
+              const vec4 bit_shift = vec4( 256.0 * 256.0 * 256.0, 256.0 * 256.0, 256.0, 1.0 );
+              const vec4 bit_mask  = vec4( 0.0, 1.0 / 256.0, 1.0 / 256.0, 1.0 / 256.0 );
+              vec4 res = fract( depth * bit_shift );
+              res -= res.xxyz * bit_mask;
+              return res;
+          }
+          void main() {
+              vec4 pixel = texture2D( texture, vUV );
+              if ( pixel.a < 0.5 ) discard;
+              gl_FragData[ 0 ] = pack_depth( gl_FragCoord.z );
+          }</script><script type="x-shader/x-vertex" id="vertexShaderDepth">varying vec2 vUV;
+          void main() {
+              vUV = 0.75 * uv;
+              vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+              gl_Position = projectionMatrix * mvPosition;
+          }</script></html>
